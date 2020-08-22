@@ -1,9 +1,12 @@
 var noon = 12;
-var evening = 6; // 6PM
+var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
 var partyTime = 17; // 5PM
 var napTime = lunchTime + 3; // 3PM
+
+// PARTY TIME BUTTON VARIABLE HERE //
+var isPartyTime = false;
 
 // NEW FUNCTION & CALLING IT //
 // CODE TO GET STORE REAL TIME //
@@ -117,3 +120,39 @@ var showCurrentTime = function()
 updateClock();
 var oneSecond = 1000;
 setInterval( updateClock, oneSecond);
+
+// ------------------------------------- //
+
+// PARTYTIMEBUTTON LINK TO HTML  //
+var partyTimeButton = document.getElementById("partyTimeButton");
+
+// BUTTON FUNCTION //
+var partyEvent = function() {
+   
+    if (isPartyTime === false) {
+       isPartyTime = true;
+       time = partyTime;
+
+       // text in the button should read "Party Over"
+       partyTimeButton.innerText="Party Over"; //* IS THIS WRONG */
+
+       // color of the button should be "#e69447" (bonus!)
+       partyTimeButton.style.backgroundColor = "#e69447";  
+           
+    }
+
+    else {
+       isPartyTime = false;
+       time = new Date().getHours();
+
+       // text in the button should read "PARTY TIME!"
+       partyTimeButton.innerText = "Party Time!"; //* IS THIS WRONG */
+       // color of the button should be "#cf39dd" (bonus!)
+       partyTimeButton.style.backgroundColor = "#cf39dd";
+
+    }
+ };  
+    
+ // FUNCTION RUNNER //
+// PARTY BUTTON //
+ partyTimeButton.addEventListener("click", partyEvent);
