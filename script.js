@@ -2,7 +2,7 @@ var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
-var partyTime = 17; // 5PM
+var partyTime = 19; // 5PM
 var napTime = lunchTime + 3; // 3PM
 
 // PARTY TIME BUTTON VARIABLE HERE //
@@ -40,7 +40,7 @@ if (time == partyTime){
   
 } else if (time == lunchTime) {	
     image = "https://i.postimg.cc/kMt1JmpY/henry-lunch.jpg";
-    messageText = "IT'S NOM NOM NOM TIME!!";
+    messageText = "IT'S NOM NOM TIME!!";
   
 } else if (time == wakeupTime) {	
     image = "https://i.postimg.cc/7L0hPbSY/harry-wake-up.jpg";
@@ -146,13 +146,40 @@ var partyEvent = function() {
        time = new Date().getHours();
 
        // text in the button should read "PARTY TIME!"
-       partyTimeButton.innerText = "Party Time!"; //* IS THIS WRONG */
-       // color of the button should be "#cf39dd" (bonus!)
-       partyTimeButton.style.backgroundColor = "#cf39dd";
+       partyTimeButton.innerText = "Instant Party Time!"; //* IS THIS WRONG */
+       // color of the button should be "##68a832" (bonus!)
+       partyTimeButton.style.backgroundColor = "#68a832";
 
     }
  };  
+  
+    // LINKS TO HTML //
+    // WAKE UP | LUNCH | NAP //
+    var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+    var wakeUpEvent = function ()
+    {
+        wakeupTime = wakeUpTimeSelector.value;
+    };
     
- // FUNCTION RUNNER //
-// PARTY BUTTON //
- partyTimeButton.addEventListener("click", partyEvent);
+    var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+    var lunchEvent = function ()
+    {
+        lunchTime = lunchTimeSelector.value;
+    };
+    
+    var napTimeSelector = document.getElementById("napTimeSelector");
+    var napEvent = function ()
+    {
+        napTime = napTimeSelector.value;
+    };
+
+    // EVENT LISTENERS //
+    // PARTY BUTTON //
+    partyTimeButton.addEventListener("click", partyEvent);
+    // -------------------- //
+    // WAKE UP TIME //
+    wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+    // LUNCH TIME //
+    lunchTimeSelector.addEventListener("change", lunchEvent);
+    // NAP TIME //
+    napTimeSelector.addEventListener("change", napEvent);
