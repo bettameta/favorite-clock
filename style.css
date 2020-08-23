@@ -54,7 +54,7 @@ blockquote:after { content: '"'; }
   box-shadow: 0 5px 10px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 #wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
-  padding: 10px 0;
+  padding: 10px;
   background-color: #ab8cf3;
   border: 2px solid #5a4113;
   border-radius: 7px;
