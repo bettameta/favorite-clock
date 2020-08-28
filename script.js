@@ -2,7 +2,7 @@ var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
-var partyTime = 19; // 5PM
+var partyTime = 18; // 6PM
 var napTime = lunchTime + 3; // 3PM
 
 // PARTY TIME BUTTON VARIABLE HERE //
