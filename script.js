@@ -2,7 +2,7 @@ var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
-var partyTime = 19; // 5PM
+var partyTime = 17; // 5PM
 var napTime = lunchTime + 3; // 3PM
 
 // PARTY TIME BUTTON VARIABLE HERE //
@@ -152,23 +152,27 @@ var partyEvent = function() {
 
     }
  };  
-  
-    // LINKS TO HTML //
-    // WAKE UP | LUNCH | NAP //
-    var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
-    var wakeUpEvent = function ()
+  // TIME SELECTOR VARIABLES //
+ // WAKE UP //
+ var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+ // LUNCH //
+    var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+ // NAP //
+    var napTimeSelector = document.getElementById("napTimeSelector");
+
+ // FUNCTION TIME SELECTORS //
+
+    var wakeUpEvent = function()
     {
         wakeupTime = wakeUpTimeSelector.value;
     };
-    
-    var lunchTimeSelector = document.getElementById("lunchTimeSelector");
-    var lunchEvent = function ()
+
+    var lunchEvent = function()
     {
         lunchTime = lunchTimeSelector.value;
     };
-    
-    var napTimeSelector = document.getElementById("napTimeSelector");
-    var napEvent = function ()
+
+    var napEvent = function()
     {
         napTime = napTimeSelector.value;
     };
