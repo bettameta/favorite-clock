@@ -2,8 +2,9 @@ var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
-var partyTime = 17; // 5PM
+var partyTime = 20; // 8PM
 var napTime = lunchTime + 3; // 3PM
+var dinnerTime = 17; // 5pm
 
 // PARTY TIME BUTTON VARIABLE HERE //
 var isPartyTime = false;
@@ -44,7 +45,11 @@ if (time == partyTime){
   
 } else if (time == wakeupTime) {	
     image = "https://i.postimg.cc/7L0hPbSY/harry-wake-up.jpg";
-    messageText = "IT'S TIME TO GET UP.";
+    messageText = "IT'S TIME TO GET UP!!";
+
+} else if (time == dinnerTime) {
+    image = "https://i.postimg.cc/vB9XvVQr/harry.jpg";
+    messageText = "IT'S TIME FOR DINNER!!";
   
 } else if (time < noon) {
 
@@ -160,6 +165,8 @@ var partyEvent = function() {
     var lunchTimeSelector = document.getElementById("lunchTimeSelector");
  // NAP //
     var napTimeSelector = document.getElementById("napTimeSelector");
+ // DINNER //
+    var dinnerTimeSelector = document.getElementById("dinnerTimeSelector");
 
  // FUNCTION TIME SELECTORS //
 
@@ -178,6 +185,11 @@ var partyEvent = function() {
         napTime = napTimeSelector.value;
     };
 
+    var dinnerEvent = function ()
+    {
+        dinnerTime = dinnerTimeSelector.value;
+    };
+
     // EVENT LISTENERS //
     // PARTY BUTTON //
     partyTimeButton.addEventListener("click", partyEvent);
@@ -188,3 +200,5 @@ var partyEvent = function() {
     lunchTimeSelector.addEventListener("change", lunchEvent);
     // NAP TIME //
     napTimeSelector.addEventListener("change", napEvent);
+    // DINNER TIME //
+    dinnerTimeSelector.addEventListener("change", dinnerEvent);
