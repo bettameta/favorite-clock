@@ -36,7 +36,7 @@ if (time == partyTime){
 
 } else if (time == napTime) {	
 
-    image = "/img/george-nap.jpg";
+    image = "../img/george-nap.jpg";
     messageText = "IT'S NAP TIME...";
   
 } else if (time == lunchTime) {	
