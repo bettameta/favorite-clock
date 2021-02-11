@@ -26,29 +26,29 @@ var messageText;
 
 // IMAGE FOR TIME OUTPUT HERE //
 var lolcat = document.getElementById('lolcat');
-var image = "/img/ozzy-else.jpg";
+var image = "https://i.postimg.cc/fLQKk3FH/ozzy-else.jpg";
 
 // START TIMED FUNCTIONS HERE //
 if (time == partyTime){
 	
-    image = "/img/party-time3.jpg";
+    image = "https://i.postimg.cc/JzwWrxxZ/party-time3.jpg";
     messageText = "IT'S PARTEE TIME!!";
 
 } else if (time == napTime) {	
 
-    image = "../img/george-nap.jpg";
+    image = "https://i.postimg.cc/vZ1dMj5Q/george-nap.jpg";
     messageText = "IT'S NAP TIME...";
   
 } else if (time == lunchTime) {	
-    image = "/img/henry-lunch.jpg";
+    image = "https://i.postimg.cc/kMt1JmpY/henry-lunch.jpg";
     messageText = "IT'S NOM NOM TIME!!";
   
 } else if (time == wakeupTime) {	
-    image = "/img/harry-wake-up.jpg";
+    image = "https://i.postimg.cc/7L0hPbSY/harry-wake-up.jpg";
     messageText = "IT'S TIME TO GET UP!!";
 
 } else if (time == dinnerTime) {
-    image = "/img/harry.jpg";
+    image = "https://i.postimg.cc/FKBzL0Qq/lunch2.jpg";
     messageText = "IT'S TIME FOR DINNER!!";
   
 } else if (time < noon) {
