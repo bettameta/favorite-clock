@@ -16,7 +16,7 @@ var time = new Date().getHours();
 var updateClock = function() 
 {
  
-// the rest of the favpet code you wrote up until this step
+// the rest of the favPet code you wrote up until this step
 // ADD NEW VARIABLES AND FUNCTION CODES HERE //
 
 // MESSAGE TEXT FOR TIME OUTPUT HERE //
@@ -25,7 +25,7 @@ var whatTimeIsItJS = document.getElementById('timeEvent');
 var messageText;
 
 // IMAGE FOR TIME OUTPUT HERE //
-var favpet = document.getElementById('favpet');
+var favPet = document.getElementById('favpet');
 var image = "https://i.postimg.cc/fLQKk3FH/ozzy-else.jpg";
 
 // START TIMED FUNCTIONS HERE //
@@ -71,7 +71,7 @@ if (time == partyTime){
 whatTimeIsItJS.innerText = messageText;
 
 // TIME IMAGE CALL OUT HERE //
-favpet.src = image;
+favPet.src = image;
 
 showCurrentTime();
  
