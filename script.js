@@ -1,8 +1,9 @@
+var time = new Date().getHours();
 var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 7; // 7AM
 var lunchTime = 12; // 12PM
-var partyTime = 20; // 8PM
+var partyTime = 19; // 7PM
 var napTime = lunchTime + 3; // 3PM
 var dinnerTime = 17; // 5pm
 
@@ -11,28 +12,25 @@ var isPartyTime = false;
 
 // NEW FUNCTION & CALLING IT //
 // CODE TO GET STORE REAL TIME //
-var time = new Date().getHours();
  
 var updateClock = function() 
 {
- 
-// the rest of the favPet code you wrote up until this step
+// the rest of the mykids code you wrote up until this step
 // ADD NEW VARIABLES AND FUNCTION CODES HERE //
 
 // MESSAGE TEXT FOR TIME OUTPUT HERE //
-
 var whatTimeIsItJS = document.getElementById('timeEvent');
 var messageText;
 
 // IMAGE FOR TIME OUTPUT HERE //
-var favPet = document.getElementById('favpet');
+var myKids = document.getElementById('mykids');
 var image = "https://i.postimg.cc/fLQKk3FH/ozzy-else.jpg";
 
 // START TIMED FUNCTIONS HERE //
 if (time == partyTime){
 	
     image = "https://i.postimg.cc/JzwWrxxZ/party-time3.jpg";
-    messageText = "IT'S PART-AY TIME!";
+    messageText = "IT'S PARTEE TIME!!";
 
 } else if (time == napTime) {	
 
@@ -41,15 +39,15 @@ if (time == partyTime){
   
 } else if (time == lunchTime) {	
     image = "https://i.postimg.cc/kMt1JmpY/henry-lunch.jpg";
-    messageText = "IT'S NOM NOM TIME!";
+    messageText = "IT'S NOM NOM TIME!!";
   
 } else if (time == wakeupTime) {	
     image = "https://i.postimg.cc/7L0hPbSY/harry-wake-up.jpg";
-    messageText = "IT'S TIME TO GET UP!";
+    messageText = "IT'S TIME TO GET UP!!";
 
 } else if (time == dinnerTime) {
     image = "https://i.postimg.cc/FKBzL0Qq/lunch2.jpg";
-    messageText = "IT'S TIME FOR DINNER!";
+    messageText = "IT'S TIME FOR DINNER!!";
   
 } else if (time < noon) {
 
@@ -71,8 +69,9 @@ if (time == partyTime){
 whatTimeIsItJS.innerText = messageText;
 
 // TIME IMAGE CALL OUT HERE //
-favPet.src = image;
+myKids.src = image;
 
+ 
 showCurrentTime();
  
 };
@@ -138,7 +137,7 @@ var partyEvent = function() {
        time = partyTime;
 
        // text in the button should read "Party Over"
-       partyTimeButton.innerText="Party Over Button"; 
+       partyTimeButton.innerText="Party Over"; //* IS THIS WRONG */
 
        // color of the button should be "#e69447" (bonus!)
        partyTimeButton.style.backgroundColor = "#e69447";  
@@ -148,10 +147,12 @@ var partyEvent = function() {
     else {
        isPartyTime = false;
        time = new Date().getHours();
+
        // text in the button should read "PARTY TIME!"
-       partyTimeButton.innerText = "Instant Party Button!"; 
-       // color of the button should be "#9019b4" (bonus!)
-       partyTimeButton.style.backgroundColor = "#9019b4";
+       partyTimeButton.innerText = "Instant Party Time!"; //* IS THIS WRONG */
+       // color of the button should be "##68a832" (bonus!)
+       partyTimeButton.style.backgroundColor = "#68a832";
+
     }
  };  
 

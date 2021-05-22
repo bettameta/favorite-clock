@@ -55,7 +55,7 @@ blockquote {
 blockquote:before { content: '"'; }
 blockquote:after { content: '"'; }
 
-#favpet {
+#mykids{
   margin: 0 auto;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
