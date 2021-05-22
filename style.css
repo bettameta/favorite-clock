@@ -14,7 +14,7 @@ body {
 }
 body {
   font: 16px/30px 'Bungee', Helvetica, Arial, sans-serif;
-  color: #140841;
+  color: #011816;
   background-color: #9fa667;
   background-image: url("https://i.postimg.cc/vmjMRW7p/diagmonds.png");
   margin: 0px;
@@ -42,9 +42,8 @@ blockquote {
   font: 2.3em/1em 'Open Sans', sans-serif;
   -webkit-text-stroke: 1px black;
   text-shadow: 5px 2px #0b0c00fa;
-  margin: -56px 0 0 0;
+  margin: -58px 0 70px 0;
   color: #52c5bf; 
-  padding-bottom: 55px;
 }
 
 blockquote:before { content: '"'; }
@@ -59,12 +58,12 @@ blockquote:after { content: '"'; }
   box-shadow: 0 5px 10px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 #wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector, #dinnerTimeSelector {
-  padding: 10px;
+  padding: 10px 0;
   background-color: #ab8cf3;
   border: 2px solid #5a4113;
   border-radius: 7px;
   box-shadow: 0 5px 10px 0 #00000033, 0 6px 20px 0 #00000030;
-
+  margin-bottom: 15px;
 }
 #partyTimeButton {
   background-color: #9019b4;

@@ -73,7 +73,6 @@ whatTimeIsItJS.innerText = messageText;
 // TIME IMAGE CALL OUT HERE //
 favpet.src = image;
 
- 
 showCurrentTime();
  
 };
