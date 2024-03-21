@@ -24,29 +24,29 @@ var messageText;
 
 // IMAGE FOR TIME OUTPUT HERE //
 var myKids = document.getElementById('mykids');
-var image = "https://i.postimg.cc/fLQKk3FH/ozzy-else.jpg";
+var image = "img/ozzy-else.jpg";
 
 // START TIMED FUNCTIONS HERE //
 if (time == partyTime){
 	
-    image = "https://i.postimg.cc/JzwWrxxZ/party-time3.jpg";
+    image = "img/party-time3.jpg";
     messageText = "IT'S PARTEE TIME!!";
 
 } else if (time == napTime) {	
 
-    image = "https://i.postimg.cc/vZ1dMj5Q/george-nap.jpg";
+    image = "img/george-nap.jpg";
     messageText = "IT'S NAP TIME...";
   
 } else if (time == lunchTime) {	
-    image = "https://i.postimg.cc/kMt1JmpY/henry-lunch.jpg";
+    image = "img/henry-lunch.jpg";
     messageText = "IT'S NOM NOM TIME!!";
   
 } else if (time == wakeupTime) {	
-    image = "https://i.postimg.cc/7L0hPbSY/harry-wake-up.jpg";
+    image = "img/harry-wake-up.jpg";
     messageText = "IT'S TIME TO GET UP!!";
 
 } else if (time == dinnerTime) {
-    image = "https://i.postimg.cc/FKBzL0Qq/lunch2.jpg";
+    image = "img/lunch2.jpg";
     messageText = "IT'S TIME FOR DINNER!!";
   
 } else if (time < noon) {
